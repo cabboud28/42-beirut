@@ -29,6 +29,7 @@ def main() -> None:
     print("========================================")
 
     station = SpaceStation.model_validate({
+    # model validation is used to validate the data against the model's rules
         "station_id": "ISS001",
         "name": "International Space Station",
         "crew_size": 6,
